@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <iostream>
+#include <vector>
 
 class gameOps {
     public:
@@ -7,9 +8,13 @@ class gameOps {
         void rollDie();
         int getRollVal();
         int getColSel();
+        gameOps();
     private:
         int rollVal;
         int colSel;
+}
+
+gameOps::gameOps(){
 }
 
 void gameOps::colSelect(){
@@ -50,4 +55,9 @@ void gameOps::rollDie(){
 
 int gameOps::getRollVal(){
     return rollVal;
+}
+
+void gameOps::gameplay(){
+    player P1, P2;
+
 }
